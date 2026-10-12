@@ -1,0 +1,26 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Malgun Gothic", sans-serif; color: #3b2a20; background: #fffaf3; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+
+.hero { min-height: 70vh; background: linear-gradient(rgba(59,42,32,.65), rgba(59,42,32,.65)), #6f4e37; color: #fff; display: flex; flex-direction: column; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 6vw; }
+.logo { font-size: 1.4rem; font-weight: bold; }
+nav ul { display: flex; gap: 24px; list-style: none; }
+.hero-text { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 16px; }
+.hero-text h1 { font-size: clamp(2rem, 6vw, 3.4rem); margin-bottom: 12px; }
+.hero-text p { margin-bottom: 28px; font-size: 1.1rem; }
+.btn { background: #e8b86d; color: #3b2a20; padding: 12px 28px; border-radius: 999px; font-weight: bold; }
+.btn:hover { background: #f1c987; }
+
+section { padding: 64px 6vw; text-align: center; }
+section.alt { background: #f3e6d3; }
+h2 { margin-bottom: 28px; font-size: 1.8rem; }
+section > p { max-width: 560px; margin: 0 auto; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; }
+.card { background: #fff; border-radius: 16px; padding: 24px 12px; box-shadow: 0 4px 12px rgba(0,0,0,.08); transition: transform .2s; }
+.card:hover { transform: translateY(-4px); }
+.card span { font-size: 2.4rem; }
+.card h3 { margin: 8px 0 4px; }
+
+footer { text-align: center; padding: 24px; background: #3b2a20; color: #d9c7b0; font-size: .9rem; }
